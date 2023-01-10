@@ -9,11 +9,11 @@ class Movie
     public function __construct($genre, $release, $studio)
     {
         $this->genre = $genre;
-        $this->release = $release;
+        $this->setYear($release);
         $this->studio = $studio;
     }
 
-    public function setEta($release)
+    public function setYear($release)
     {
         if (is_integer($release) && $release >= 0) {
             $this->release = $release;
