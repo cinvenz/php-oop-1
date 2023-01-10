@@ -1,4 +1,4 @@
-<?
+<?php
 class Movie
 {
     public $genre;
